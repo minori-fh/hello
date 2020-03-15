@@ -1,0 +1,11 @@
+.nav {
+    height: 8vh; 
+    color: grey;
+    padding-right: 30px;  
+}
+
+.nav p {
+    float: right; 
+    display: block; 
+    padding-right: 25px; 
+}

@@ -1,6 +1,6 @@
 {
   "name": "hello",
-  "homepage": "https://github.com/minori-fh/hello",
+  "homepage": "https://minori-fh.github.io/hello",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

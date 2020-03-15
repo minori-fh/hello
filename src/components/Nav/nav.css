@@ -9,3 +9,7 @@
     display: block; 
     padding-right: 25px; 
 }
+
+.underline {
+    text-decoration: underline;
+}

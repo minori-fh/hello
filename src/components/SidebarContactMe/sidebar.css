@@ -1,0 +1,10 @@
+.sidebar {
+    position: fixed;
+    bottom: 10px;
+    right: 0; 
+}
+
+.contactLogo {
+    width: 40px; 
+    display: block; 
+}

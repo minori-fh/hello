@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+
 .nav {
-    height: 8vh; 
-    color: grey;
-    padding-right: 30px;  
+    height: 5vh;
+    font-size: 14px;
 }
 
-.nav p {
-    float: right; 
-    display: block; 
-    padding-right: 25px; 
+.menu {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    display: table;
+    margin-right: 5vh;
 }
 
-.underline {
-    text-decoration: underline;
+.nav li {
+    list-style-type: none;
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+li:nth-of-type(1){
+    padding-right: 25px;
 }

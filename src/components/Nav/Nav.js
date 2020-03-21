@@ -4,8 +4,10 @@ import "./nav.css";
 // functional component
 const Nav = (props) => (
     <div className="nav">
-        <p className="portfolio" onClick={props.portfolio} style={{color: props.portState ? "black" : "grey"}}>portfolio</p>
-        <p className="about" onClick={props.about} style={{color: props.aboutState ? "black" : "grey"}}>about</p>
+        <ul className="menu">
+            <li className="about" onClick={props.about} style={{color: props.aboutState ? "black" : "grey"}}>ABOUT</li>
+            <li className="portfolio" onClick={props.portfolio} style={{color: props.portState ? "black" : "grey"}}>PORTFOLIO</li>
+        </ul>
     </div>
 );
 

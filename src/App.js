@@ -3,7 +3,7 @@ import './App.css';
 
 import Nav from "./components/Nav/Nav";
 import SidebarContactMe from "./components/SidebarContactMe/SidebarContactMe";
-import { getRoles } from '@testing-library/react';
+import Main from "./components/Main/Main";
 
 class App extends Component {
 
@@ -12,6 +12,7 @@ class App extends Component {
     this.state = {
         portfolio: false,
         about: false,
+        intro: true,
     }
   }
 
@@ -19,6 +20,7 @@ class App extends Component {
     this.setState({
       portfolio: true,
       about: false,
+      intro: false,
     })
     console.log("portfolio state is: " + this.state.portfolio)
   }
@@ -27,6 +29,7 @@ class App extends Component {
     this.setState({
       about: true,
       portfolio: false,
+      intro: false,
     })
     console.log("about state is: " + this.state.about)
   }
@@ -36,6 +39,7 @@ class App extends Component {
       <div>
         <Nav portfolio={this.goToPortfolio} about={this.goToAbout} portState={this.state.portfolio} aboutState={this.state.about}/>
         <SidebarContactMe/>
+        <Main portState={this.state.portfolio} aboutState={this.state.about} introState={this.state.intro}/>
      </div>
     )
   }
